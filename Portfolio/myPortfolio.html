@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1>Shagun Niranjan</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                <strong>Email:</strong> rollniranjan123@gmail.com<br>
+                <strong>Phone:</strong> +91-8726716247, +91-8840573265<br>
+                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shagun-niranjan-49244b1a2/">Shagun Niranjan</a>
+            </p>
+            <p>
+                As a highly motivated and detail-oriented individual. I possess technical skills in HTML, CSS, Java, Python, and MS Office. I am a certified Web Developer and Bootcamp graduate from Udemy and have received certification from Hackerrank in Python. Recently, I completed training in Machine Learning. Currently pursuing a Diploma in Programming from IIT Madras and completed M.C.A from VIT Bhopal University. I have worked on various academic projects such as Flask-based To-Do List application and Color Detection project using Pandas and OpenCV. I am passionate about solving complex problems and continuously enhancing my skills.
+            </p>
+            <!-- Skills Section -->
+            <h3>Skills</h3>
+            <ul>
+                <li>Core Java</li>
+                <li>Python</li>
+                <li>HTML & CSS</li>
+                <li>SQLite</li>
+                <li>MySQL</li>
+                <li>Basic System Commands</li>
+                <li>Problem Solving</li>
+            </ul>
+            <!-- Education Section -->
+            <h3>Education</h3>
+            <ul>
+                <li>
+                    <strong>Diploma in Programming</strong><br>
+                    <em>Indian Institute of Technology (IIT), Madras</em><br>
+                    May 2022 – December 2023 (Expected)<br>
+                    Current CGPA: 7.25/10
+                </li>
+                <li>
+                    <strong>Master of Computer Applications (MCA)</strong><br>
+                    <em>VIT Bhopal University</em><br>
+                    Graduated in 2023<br>
+                    CGPA: 7.32/10
+                </li>
+                <li>
+                    <strong>Bachelor of Computer Applications (BCA)</strong><br>
+                    <em>Prestige Institute of Management and Research, Indore</em><br>
+                    Graduated in 2021<br>
+                    CGPA: 7.17/10
+                </li>
+                <li>
+                    <strong>Higher Secondary Certificate (HSC)</strong><br>
+                    <em>ISC Board</em><br>
+                    Graduated in 2018<br>
+                    Score: 70.67%
+                </li>
+                <li>
+                    <strong>Secondary School Certificate (SSC)</strong><br>
+                    <em>ICSE Board</em><br>
+                    Graduated in 2016<br>
+                    Score: 70%
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <div class="project">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Ticket Booking Web Application (TicketShow)</h3>
+                        <p>This application is made using Python Framework Flask, SQLite. It allows the
+                            admin to do CRUD operations on venues and events, and users to
+                            book the show ticket according to the location.
+                            <a href="https://github.com/Demon-Destroyer/Ticket-show">GitHub</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="Ticketshow.png" alt="Project 1" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Color Detection :</h3>
+                        <p>Color Detection Project in Python using
+                            Pandas and OpenCV. Allows users to detect color or any pixel of
+                            any image in Hex value with name</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="Color.png" alt="Project 2" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>To-Do List :</h3>
+                        <p>This allows us to add Tasks. We can edit tasks and
+                            also view all tasks which we have created.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="To-do.png" alt="Project 2" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Student Enrollment Form :</h3>
+                        <p>This form allows you to enter, reset
+                            or even get the data by Roll-No. By entering the Roll no. all the
+                            fields fill automatically. Made using HTML, Javascript, bootstrap,
+                            JSON API.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="Student.png" alt="Project 2" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>You can reach me at rollniranjan123@gmail.com</p>
+        </div>
+    </section>
+    <script>
+        // JavaScript to make the navbar stick to the top while scrolling
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 0) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Convert Temperature</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Convert Temperature from Celsius to Fahrenheit </h2>
+            <form method="get">
+                <div class="form-group">
+                    <label for="temp">Enter Temperature in Celsius: </label>
+                    <input type="number" class="form-control" id="temp" name="temp">
+                </div>
+                <button type="button" class="btn btn-primary" id="save" onclick="tempcon()">Convert</button>
+            </form>
+            <textarea name="screen" id="screen" style="resize: none; border: none; margin: 1%  " disabled> </textarea>
+        </div>
+    </body>
+    <script>
+        let screen=document.getElementById("screen");
+            function tempcon(){
+                var num = $("#temp").val();
+                let f=0;
+                f = (num * (9 / 5)) + 32;
+                screen.value=f;
+                console.log("The value of the temperature in Fahrenheit is " + f);
+                resetForm();
+            }
+            function resetForm() {
+                $("#temp").val("");
+                $("#temp").focus();
+            }
+    </script>
+</html>
